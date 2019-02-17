@@ -1,0 +1,118 @@
+/* 
+  各エリアが分かりやすいように点線で囲ってあります
+  border:dashed 1px #999;をコメントアウトすれば囲いは消えます
+  それぞれのスタイルの役割をコメントで書いてありますので、
+  レイアウトを崩さないように部品を配置していって下さい
+*/
+
+/* ページ全体の幅を指定するラッパー */
+#wrap {
+  width:960px;
+  margin:0px auto;
+}
+
+header {
+  border:dashed 1px #999;
+}
+
+/* 左側サイドナビ(float:left指定) */
+#sidenavi {
+  float:left;
+  width:240px;
+  height:698px;
+  border:dashed 1px #999;
+  margin:10px 10px 10px 0px;
+}
+
+/* 右側コンテンツ(float:left指定) */
+#contents {
+  float:left;
+  width:706px;
+  height:698px;
+  border:dashed 1px #999;
+  margin:10px 0px 10px 0px;
+}
+/* 右側コンテンツの最後で(float:left解除) */
+#contents.after {
+  clear:both;
+}
+
+/* 左側のコラムで再度(float:left指定) */
+#col-left {
+  float:left;
+  width:473px;
+  height:498px;
+  border:dashed 1px #999;
+  margin:10px 10px 10px 0px;
+}
+
+/* 右側のコラム(float:left指定) */
+#col-right {
+  float:left;
+  width:473px;
+  height:498px;
+  border:dashed 1px #999;
+  margin:10px 0px 10px 0px;
+}
+
+/* フッター(float:left解除) */
+footer {
+  clear:both;
+  border:dashed 1px #999;
+}
+
+/* css3に非対応ブラウザ用のスタイル定義 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+#guide_area {
+	width: 240px;
+	margin-bottom: 10px;
+	border: none;
+}
+
+#guide_area ul{
+  padding: 0;
+}
+#guide_area ul li {
+  color: #2d8fdd;
+  border-left: solid 6px #2d8fdd;/*左側の線*/
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 3px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
+  display: block;
+}
+
+#login-area{
+  padding: 0 9px;
+  height: 160px;
+  line-height: 25px;
+  vertical-align: middle;
+  font-size: 17px;
+  background: #62c1ce;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+#login-area p{
+  margin: 0;
+  padding: 0;
+}
+
+#button_area ul{
+  padding: 0;
+}
+#button_area ul li {
+  color: #2d8fdd;
+  border-left: solid 6px #2d8fdd;/*左側の線*/
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 3px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
+  display: block;
+}
